@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class Projeto {
+
+	public static void main(String[] args) {
+	
+		Scanner entrada = new Scanner(System.in);
+		int Idade;
+		double Preço;
+		String Nome;
+		int EsEntrete;
+		int Comida;
+		
+		
+		
+		
+		System.out.println("seja bem vindo(a) ao programa de viagem Melhor Viagem, "
+				+ "Me chamo Pedro e vou ajudar você a escolher os melhores enteterimentos para a sua viagem");
+		
+		System.out.println("Qual o seu Primeiro Nome? ");
+		Nome=entrada.next();
+		
+		System.out.println( "Ola "+ Nome + ", seja bem vindo(a), vamos comecar?");
+		
+		System.out.println("Que tipo de entreterimento voce quer ir?");
+		System.out.println("1- Praia, 2- Cidade, 3- Interior");
+		EsEntrete = entrada.nextInt();
+		
+		if(EsEntrete ==1) {
+			
+			System.out.println("Pegar um sol né? Otima escolha!");
+			
+			
+		}else if(EsEntrete ==2) {
+			
+			System.out.println("Sua vibe é mais movimentada, certo?");
+			
+			
+		}else if (EsEntrete == 3) {
+			
+			System.out.println("Você quer tirar umas ferias da vida movimentada da cidade grande né?!");
+				
+		}else {
+			
+			System.out.println("digite um numero valido!!!");
+			
+		}
+		
+		System.out.println("Que tal escolher qual vai ser a sua comida por la?!");
+		
+		if(EsEntrete==1) {
+			
+			System.out.println("1- Carangueijo, 2- Camarão, 3- Peixada, 4- nenhuma escolha ");
+			
+		}else if(EsEntrete ==2){
+		
+			System.out.println("1- Rodizio de carne, 2- Rodizio de sushi, 3- Comida de rua, 4- nenhuma escolha");
+			
+		}else if(EsEntrete == 3) {
+			
+			System.out.println("1- buchada, 2- comida regional, 3- carne de sol   ");
+				
+		}else if (EsEntrete == 4) {
+			
+			System.out.println("Nao quer nada? Ok");
+			
+		}else {
+			
+			System.out.println("digite um valor valido");
+			
+		}
+		Comida=entrada.nextInt();
+		
+		System.out.println("otima escolha!!");
+		System.out.println("Oque voce quer beber? ");
+		
+		//if(EsEntrete ==1) {
+			
+			//System.out.println("1- coca cola, 2- agua, 3- cerveja");
+			
+			
+		//}else if es
+		
+	
+		
+		
+		
+		
+		
+	
+	
+	}
+}

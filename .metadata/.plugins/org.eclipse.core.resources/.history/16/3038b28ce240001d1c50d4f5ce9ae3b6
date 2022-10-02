@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Projeto {
+
+	public static void main(String[] args) {
+	
+		Scanner entrada = new Scanner(System.in);
+		int Idade;
+		double Preço;
+		String Nome;
+		String Snome;
+		
+		System.out.println("seja bem vindo(a) ao programa de viagem Melhor Viagem, "
+				+ "Me chamo Pedro e vou ajudar você a escolher os melhores enteterimentos para a sua viagem");
+		
+		System.out.println("Qual o seu Primeiro Nome? ");
+		Nome=entrada.next();
+		
+		System.out.println("Qual o seu Sobrenome? ");
+		Snome=entrada.next();
+		
+		System.out.println((Nome) +  (Snome));
+		
+	}
+
+}
