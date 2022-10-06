@@ -8,9 +8,36 @@ public class Projeto {
 		int Idade;
 		double Preço;
 		String Nome;
-		int EsEntrete;
-		int Comida;
-		int Bebida;
+		int EsEntrete; //variavel que vai receber qual local o cliente quer ir
+		
+		int Comida; //recebe a variavel comida
+		int Bebida;//recebe a variavem bebida
+		double total;
+	///	-------------------------------------------Preços dos produtos/lugares--------------------------------------------------------
+		
+		//vairaveis praia//
+		String Spraia= "Praia";
+		double Praia = 150.00;
+		
+		String Scamarao="Camarao";
+		double Pcamarao = 50.00;
+		
+		String Scarangueijo="Carangueijo";
+		double Pcarangueijo = 60.00;
+		
+		String Speixada="Peixada";
+		double Ppeixada= 150.00;
+		
+		
+		
+		double Cidade = 200.00;
+		double Interior = 100.00;
+		
+		
+		
+		
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		
 		
 		
 		
@@ -23,23 +50,26 @@ public class Projeto {
 		System.out.println( "Ola "+ Nome + ", seja bem vindo(a), vamos comecar?");
 		
 		System.out.println("Que tipo de entreterimento voce quer ir?");
-		System.out.println("1- Praia, 2- Cidade, 3- Interior");
+		System.out.println("[1] Praia "+"- "+Praia);
+		System.out.println("[2] Cidade "+"- "+Cidade);
+		System.out.println("[3] Interior "+"- "+Interior);
+		
 		EsEntrete = entrada.nextInt();
+		
 		
 		if(EsEntrete ==1) {
 			
 			System.out.println("Pegar um sol né? Otima escolha!");
-			System.out.println("Que tal escolher qual vai ser a sua comida por la?!");
-			
+	
 		}else if(EsEntrete ==2) {
 			
 			System.out.println("Sua vibe é mais movimentada, certo?");
-			System.out.println("Que tal escolher qual vai ser a sua comida por la?!");			
+					
 			
 		}else if (EsEntrete == 3) {
 			
 			System.out.println("Você quer tirar umas ferias da vida movimentada da cidade grande né?!");
-			System.out.println("Que tal escolher qual vai ser a sua comida por la?!");
+			
 				
 		}else {
 			
@@ -47,11 +77,16 @@ public class Projeto {
 			
 		}
 		
+		System.out.println("otima escolha!!");
+		Comida=entrada.nextInt();
 		
 		
 		if(EsEntrete==1) {
 			
-			System.out.println("1- R$50,00 Carangueijo, 2- R$60,00 Camarão, 3- R$150,00 Peixada, 4- nenhuma escolha ");
+			System.out.println("Que tal escolher qual vai ser a sua comida por la?!");
+			System.out.println("[1]"+Scamarao + "-" +Pcamarao);
+			System.out.println("[2]"+Scarangueijo + "-" +Pcarangueijo);
+			System.out.println("[3]"+Speixada + "-"+Ppeixada);
 			System.out.println("otima escolha!!");
 			
 			
@@ -74,12 +109,12 @@ public class Projeto {
 			System.out.println("digite um valor valido");
 			
 		}
-		Comida=entrada.nextInt();
-	
+		
+		
 		
 		System.out.println("Oque voce quer beber? ");
 		
-		if(EsEntrete ==1||EsEntrete==4||EsEntrete==2||EsEntrete==3) {
+		if(EsEntrete ==1||EsEntrete==2||EsEntrete==3||EsEntrete==4) {
 			
 			System.out.println("1- coca cola, 2- agua, 3- cerveja, 4- nada"); 
 			
@@ -94,7 +129,7 @@ public class Projeto {
 		
 		System.out.println("olá "+ Nome +", aqui estão os itens que voce escolheu: ");
 		System.out.println("De entreterimento voce escolheu: "+EsEntrete);
-		System.out.println("De comida voce escolheu: "+ Comida);
+		System.out.println("De comida voce escolheu: ");
 		System.out.println("De bebida voce escolheu: " + Bebida);
 		
 		
